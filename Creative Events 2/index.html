@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Creative Events (Pvt) Ltd is Sri Lanka's premier event management company. Specializing in luxury weddings, corporate events, stage production, and consultancy.">
+    <meta name="keywords"
+        content="Event Management, Sri Lanka Events, Weddings Sri Lanka, Corporate Events Colombo, Creative Events, Luxury Weddings, Stage Production Colombo">
+    <meta name="author" content="Creative Events (Pvt) Ltd">
+    <title>Creative Events | Premium Event Management Company Sri Lanka</title>
+
+    <!-- Google Fonts: Elegant Serif 'Cormorant Garamond' and modern sans-serif 'Inter' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css?v=2">
+
+    <!-- Lucide Icons for Premium UI Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="main-header" class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo-wrapper" id="brand-logo">
+                <img src="img/logo.png?v=3" alt="Creative Events Logo" class="logo-img">
+            </a>
+
+            <button class="mobile-nav-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="navigation-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">HOME</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT US</a></li>
+                    <li><a href="#services" class="nav-link">SERVICES</a></li>
+                    <li><a href="#portfolio" class="nav-link">OUR WORK</a></li>
+                    <li><a href="#" class="nav-link">BLOG</a></li>
+                    <li><a href="#footer" class="nav-link">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="btn btn-outline" id="header-inquiry-btn">GET IN TOUCH</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section" style="background-image: url('assets/concert_lights.png');">
+            <div class="hero-video-container">
+                <video autoplay loop muted playsinline class="hero-video-bg" poster="assets/concert_lights.png">
+                    <source src="assets/concert_lights.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="hero-bg-overlay"></div>
+
+            <div class="container hero-container">
+                <div class="hero-grid-layout">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">SRI LANKA'S PREMIUM</span>
+                        <h1 class="hero-title">
+                            EVENT<br>
+                            MANAGEMENT<br>
+                            COMPANY
+                        </h1>
+                        <p class="hero-description">We create unforgettable experiences with creativity, precision and
+                            passion.</p>
+
+                        <div class="hero-actions">
+                            <a href="#portfolio" class="btn btn-primary" id="discover-more-btn">DISCOVER MORE <i
+                                    class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="hero-video-wrapper">
+                        <div class="hero-video-trigger" id="play-showreel-btn">
+                            <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+                            <span class="play-text">WATCH SHOWREEL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Dots Pagination on far right -->
+            <div class="hero-pagination">
+                <span class="page-dot active"></span>
+                <span class="page-dot"></span>
+                <span class="page-dot"></span>
+                <span class="page-dot"></span>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <span class="section-badge">ABOUT US</span>
+                        <h2 class="about-title">WE DON'T JUST PLAN EVENTS,<br>WE CREATE EXPERIENCES.</h2>
+                        <div class="about-divider"></div>
+                        <p class="about-paragraph">Creative Events (Pvt) Ltd is a Sri Lankan based premium event
+                            management company known for delivering exceptional events tailored to perfection.</p>
+                        <p class="about-paragraph">From concepts to execution, we handle every detail with creativity,
+                            precision and passion—ensuring your special moments are nothing short of extraordinary.</p>
+
+                        <a href="#services" class="btn btn-outline" id="about-more-btn">MORE ABOUT US <i
+                                class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+
+                    <div class="about-visual-content">
+                        <div class="about-image-wrapper">
+                            <div class="about-decor-frame"></div>
+                            <img src="assets/about_dinner.png" alt="Creative Events Luxury Dinner Setup"
+                                class="about-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-badge">OUR EXPERTISE</span>
+                    <h2 class="section-title">HOW WE BRING EVENTS TO LIFE</h2>
+                </div>
+
+                <div class="services-list-container">
+
+                    <!-- DEPARTMENT 1: Photo & Video Booths -->
+                    <div class="dept-block" id="dept-booths">
+                        <div class="dept-header">
+                            <div class="dept-icon-wrapper">
+                                <i data-lucide="aperture" class="dept-icon"></i>
+                            </div>
+                            <div class="dept-label-group">
+                                <span class="dept-tag">ENGAGING EXPERIENCES</span>
+                                <h3 class="dept-title">PHOTO &amp; VIDEO BOOTHS</h3>
+                            </div>
+                        </div>
+                        <div class="tile-grid tiles-2">
+                            <div class="service-tile" id="tile-360-booth">
+                                <img src="assets/wedding_walkway.png" alt="360 Video Booth" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">360&#176; Video Booth</span>
+                                    <p class="tile-desc">Immersive revolving camera capturing cinematic slow-motion videos of your guests.</p>
+                                </div>
+                            </div>
+                            <div class="service-tile" id="tile-mirror-booth">
+                                <img src="assets/garden_dinner.png" alt="Mirror Video Booth" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">Mirror Video Booth</span>
+                                    <p class="tile-desc">Elegant full-length interactive mirror guiding guests through a premium photo experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPARTMENT 2: Videography & Photography -->
+                    <div class="dept-block" id="dept-visual">
+                        <div class="dept-header">
+                            <div class="dept-icon-wrapper">
+                                <i data-lucide="film" class="dept-icon"></i>
+                            </div>
+                            <div class="dept-label-group">
+                                <span class="dept-tag">VISUAL STORYTELLING</span>
+                                <h3 class="dept-title">VIDEOGRAPHY &amp; PHOTOGRAPHY</h3>
+                            </div>
+                        </div>
+                        <div class="tile-grid tiles-3">
+                            <div class="service-tile" id="tile-drone">
+                                <img src="assets/wedding_walkway.png" alt="Aerial Videography" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">Aerial Videography (Drone)</span>
+                                    <p class="tile-desc">Stunning 4K aerial cinematography for sweeping event coverage from the skies.</p>
+                                </div>
+                            </div>
+                            <div class="service-tile" id="tile-photography">
+                                <img src="assets/about_dinner.png" alt="Event Photography" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">Event Photography</span>
+                                    <p class="tile-desc">Candid coverage and high-fashion editorial portraits that preserve every emotion.</p>
+                                </div>
+                            </div>
+                            <div class="service-tile" id="tile-videography">
+                                <img src="assets/corporate_stage.png" alt="Event Videography" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">Event Videography</span>
+                                    <p class="tile-desc">Cinematic highlight films and professional documentary coverage for every occasion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPARTMENT 3: Visual & Special Effects -->
+                    <div class="dept-block" id="dept-effects">
+                        <div class="dept-header">
+                            <div class="dept-icon-wrapper">
+                                <i data-lucide="sparkles" class="dept-icon"></i>
+                            </div>
+                            <div class="dept-label-group">
+                                <span class="dept-tag">ATMOSPHERIC MAGIC</span>
+                                <h3 class="dept-title">VISUAL &amp; SPECIAL EFFECTS</h3>
+                            </div>
+                        </div>
+                        <div class="tile-grid tiles-2">
+                            <div class="service-tile" id="tile-confetti">
+                                <img src="assets/concert_lights.png" alt="Confetti and Petal Dropping" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">Confetti &amp; Petal Dropping</span>
+                                    <p class="tile-desc">Sophisticated flower petal drops and confetti systems for dramatic reveal moments.</p>
+                                </div>
+                            </div>
+                            <div class="service-tile" id="tile-led">
+                                <img src="assets/concert_lights.png" alt="4K LED Wall Displays" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">4K LED Wall Displays</span>
+                                    <p class="tile-desc">High-refresh modular LED screens for breathtaking stage backdrops and live visuals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DEPARTMENT 4: Audio & Technical -->
+                    <div class="dept-block" id="dept-audio">
+                        <div class="dept-header">
+                            <div class="dept-icon-wrapper">
+                                <i data-lucide="sliders" class="dept-icon"></i>
+                            </div>
+                            <div class="dept-label-group">
+                                <span class="dept-tag">SOUND PERFORMANCE</span>
+                                <h3 class="dept-title">AUDIO &amp; TECHNICAL</h3>
+                            </div>
+                        </div>
+                        <div class="tile-grid tiles-1">
+                            <div class="service-tile tile-wide" id="tile-sound">
+                                <img src="assets/corporate_stage.png" alt="Corporate Sound Systems" class="tile-bg-img">
+                                <div class="tile-overlay"></div>
+                                <div class="tile-content">
+                                    <span class="tile-title">Corporate Sound Systems</span>
+                                    <p class="tile-desc">Intelligent speaker arrays, digital consoles, and feedback-free microphone systems for flawless audio delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+                <!-- Our Work / Portfolio Row Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container portfolio-header-container">
+                <div class="portfolio-header-left">
+                    <span class="section-badge">OUR WORK</span>
+                    <h2 class="section-title">MOMENTS WE'VE BROUGHT TO LIFE.</h2>
+                </div>
+                <div class="portfolio-header-right">
+                    <button class="btn btn-outline" id="view-gallery-btn">VIEW GALLERY <i
+                            class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+
+            <!-- Row of 5 images side-by-side stretching screen width or grid containment -->
+            <div class="portfolio-row-container">
+                <div class="portfolio-row-item">
+                    <video autoplay loop muted playsinline class="portfolio-row-img"
+                        poster="assets/wedding_walkway.png">
+                        <source src="assets/wedding_walkway.webm" type="video/webm">
+                    </video>
+                    <div class="row-item-overlay">
+                        <h4>WEDDINGS</h4>
+                    </div>
+                </div>
+                <div class="portfolio-row-item">
+                    <video autoplay loop muted playsinline class="portfolio-row-img"
+                        poster="assets/corporate_stage.png">
+                        <source src="assets/corporate_stage.webm" type="video/webm">
+                    </video>
+                    <div class="row-item-overlay">
+                        <h4>CORPORATE</h4>
+                    </div>
+                </div>
+                <div class="portfolio-row-item">
+                    <video autoplay loop muted playsinline class="portfolio-row-img" poster="assets/garden_dinner.png">
+                        <source src="assets/garden_dinner.webm" type="video/webm">
+                    </video>
+                    <div class="row-item-overlay">
+                        <h4>SOCIAL</h4>
+                    </div>
+                </div>
+                <div class="portfolio-row-item">
+                    <video autoplay loop muted playsinline class="portfolio-row-img" poster="assets/concert_lights.png">
+                        <source src="assets/concert_lights.webm" type="video/webm">
+                    </video>
+                    <div class="row-item-overlay">
+                        <h4>PRODUCTION</h4>
+                    </div>
+                </div>
+                <div class="portfolio-row-item">
+                    <video autoplay loop muted playsinline class="portfolio-row-img"
+                        poster="assets/table_centerpiece.png">
+                        <source src="assets/table_centerpiece.webm" type="video/webm">
+                    </video>
+                    <div class="row-item-overlay">
+                        <h4>STYLING</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action Banner Section -->
+        <section class="cta-banner-section">
+            <div class="cta-waves-bg"></div>
+            <div class="container cta-container">
+                <div class="cta-left">
+                    <span class="cta-badge">LET'S CREATE SOMETHING EXTRAORDINARY TOGETHER</span>
+                    <h2 class="cta-title">PLAN YOUR NEXT EVENT WITH CREATIVE EVENTS</h2>
+                </div>
+                <div class="cta-right">
+                    <button class="btn btn-primary" id="cta-inquiry-btn">GET IN TOUCH <i
+                            class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="container footer-grid">
+            <!-- Col 1 -->
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-wrapper">
+                    <img src="img/logo.png?v=3" alt="Creative Events Logo" class="logo-img">
+                </a>
+                <p class="footer-desc">Sri Lanka's premium event management company crafting unforgettable experiences.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">QUICK LINKS</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Our Work</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">SERVICES</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#services">Corporate Events</a></li>
+                    <li><a href="#services">Weddings</a></li>
+                    <li><a href="#services">Social Events</a></li>
+                    <li><a href="#services">Event Production</a></li>
+                    <li><a href="#services">Event Consultancy</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-col-title">CONTACT US</h4>
+                <ul class="footer-contact-list">
+                    <li><i class="fa-solid fa-phone"></i> 077 734 6001</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@creativeevents.lk</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 168/1, Kandawatte.Nawala</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Creative Events (Pvt) Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Showreel Lightbox Modal -->
+    <div class="lightbox-modal" id="video-lightbox" role="dialog" aria-modal="true" aria-labelledby="showreel-title">
+        <button class="lightbox-close" id="close-lightbox-btn" aria-label="Close showreel video">&times;</button>
+        <div class="lightbox-content">
+            <h3 id="showreel-title" class="sr-only">Creative Events Cinematic Showreel</h3>
+            <div class="video-container-wrapper">
+                <div class="mock-video-player">
+                    <div class="player-overlay-gradient"></div>
+                    <div class="spinner" id="video-loader"></div>
+                    <div class="mock-video-screen">
+                        <div class="mock-stage-lights">
+                            <span class="beam beam-1"></span>
+                            <span class="beam beam-2"></span>
+                            <span class="beam beam-3"></span>
+                        </div>
+                        <div class="mock-video-text">
+                            <span class="live-badge"><i class="fa-solid fa-circle"></i> MOCK SHOWREEL</span>
+                            <h2>CREATIVE EVENTS</h2>
+                            <p>Cinematic Production Reels - Shangri-La Colombo & Galle Beach Weddings</p>
+                        </div>
+                    </div>
+                    <div class="video-controls-bar">
+                        <button class="control-btn" id="modal-play-pause"><i class="fa-solid fa-pause"></i></button>
+                        <span class="time-stamp">0:45 / 2:30</span>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 30%"></div>
+                        </div>
+                        <button class="control-btn"><i class="fa-solid fa-volume-high"></i></button>
+                        <button class="control-btn"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry Floating Modal (Get in Touch) -->
+    <div class="lightbox-modal" id="inquiry-modal" role="dialog" aria-modal="true"
+        aria-labelledby="modal-inquiry-title">
+        <button class="lightbox-close" id="close-inquiry-modal-btn" aria-label="Close Inquiry Form">&times;</button>
+        <div class="lightbox-content modal-card-wrapper">
+            <div class="contact-form-card glass-card modal-form-body">
+                <h3 class="form-title" id="modal-inquiry-title">Get In Touch</h3>
+                <p class="form-subtitle">Let's design something spectacular together.</p>
+                <form id="modal-event-form" class="inquiry-form">
+                    <div class="form-group">
+                        <label for="m-client-name">Your Name *</label>
+                        <input type="text" id="m-client-name" name="name" placeholder="John Doe" required>
+                        <span class="form-error-msg" id="m-name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="m-client-email">Email Address *</label>
+                        <input type="email" id="m-client-email" name="email" placeholder="john@example.com" required>
+                        <span class="form-error-msg" id="m-email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="m-client-phone">Phone Number *</label>
+                        <input type="tel" id="m-client-phone" name="phone" placeholder="0771234567" required>
+                        <span class="form-error-msg" id="m-phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="m-event-type">Event Category *</label>
+                        <select id="m-event-type" name="eventType" required>
+                            <option value="" disabled selected>Select event category...</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="wedding">Luxury Wedding</option>
+                            <option value="social">Social Celebration</option>
+                            <option value="production">Stage/AV Production</option>
+                            <option value="consultancy">Event Consultancy</option>
+                        </select>
+                        <span class="form-error-msg" id="m-type-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="m-event-details">Short Message</label>
+                        <textarea id="m-event-details" name="details" rows="3"
+                            placeholder="Tell us what you have in mind..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width" id="modal-submit-btn">Send Inquiry Package
+                        <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+
+                <div class="success-message-overlay" id="m-form-success-overlay">
+                    <div class="success-animation-container">
+                        <div class="checkmark-circle">
+                            <div class="checkmark-stem"></div>
+                            <div class="checkmark-kick"></div>
+                        </div>
+                    </div>
+                    <h3 class="success-title">Thank You!</h3>
+                    <p class="success-desc">Your message has been sent successfully. Our team will contact you very
+                        soon.</p>
+                    <button class="btn btn-outline" id="m-success-close-btn">Close Window</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>
