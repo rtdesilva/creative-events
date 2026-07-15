@@ -261,4 +261,92 @@ document.addEventListener('DOMContentLoaded', () => {
         closeInquiryModal();
     });
 
+
+    // ==========================================
+    // 7. Magic Mirror Interactive Photo Booth
+    // ==========================================
+    const mirrorTile = document.getElementById('tile-mirror-booth');
+    if (mirrorTile) {
+        const mirrorPrompt = mirrorTile.querySelector('.mirror-prompt');
+        const touchBtn = mirrorTile.querySelector('.mirror-touch-btn');
+        const countdownLayer = mirrorTile.querySelector('.mirror-countdown-layer');
+        const countdownNum = mirrorTile.querySelector('.mirror-countdown-num');
+        const flashLayer = mirrorTile.querySelector('.mirror-flash-layer');
+        const processingLayer = mirrorTile.querySelector('.mirror-processing-layer');
+        const stripLayer = mirrorTile.querySelector('.mirror-strip-layer');
+        const stripClose = mirrorTile.querySelector('.mirror-strip-close');
+
+        const startMirrorSequence = (e) => {
+            e.stopPropagation(); // Prevent trigger events bubbling up
+            
+            // Activate state & hide start button
+            mirrorTile.classList.add('mirror-active');
+            mirrorPrompt.style.opacity = '0';
+            setTimeout(() => {
+                mirrorPrompt.style.display = 'none';
+            }, 300);
+
+            // Start countdown sequence
+            countdownLayer.style.display = 'flex';
+            let count = 3;
+            countdownNum.textContent = count;
+
+            const countdownInterval = setInterval(() => {
+                count--;
+                if (count > 0) {
+                    countdownNum.textContent = count;
+                } else {
+                    clearInterval(countdownInterval);
+                    triggerCameraShutter();
+                }
+            }, 1000);
+        };
+
+        const triggerCameraShutter = () => {
+            countdownLayer.style.display = 'none';
+            
+            // Trigger visual flash
+            flashLayer.classList.add('flash-active');
+            
+            // Mock audio shutter click if supported (optional visual flash does most heavy lifting)
+            setTimeout(() => {
+                flashLayer.classList.remove('flash-active');
+                showProcessingState();
+            }, 500);
+        };
+
+        const showProcessingState = () => {
+            processingLayer.style.display = 'flex';
+            
+            // Simulate photo processing/printing for 2.5 seconds
+            setTimeout(() => {
+                processingLayer.style.display = 'none';
+                showPhotoStrip();
+            }, 2500);
+        };
+
+        const showPhotoStrip = () => {
+            stripLayer.style.display = 'flex';
+        };
+
+        const resetMirrorState = (e) => {
+            e.stopPropagation();
+            
+            // Hide strip layer and remove active visual classes
+            stripLayer.style.display = 'none';
+            mirrorTile.classList.remove('mirror-active');
+            
+            // Restore start prompt
+            mirrorPrompt.style.display = 'flex';
+            setTimeout(() => {
+                mirrorPrompt.style.opacity = '1';
+            }, 50);
+        };
+
+        // Attach event listeners
+        touchBtn.addEventListener('click', startMirrorSequence);
+        mirrorPrompt.addEventListener('click', startMirrorSequence);
+        stripClose.addEventListener('click', resetMirrorState);
+    }
+
 });
